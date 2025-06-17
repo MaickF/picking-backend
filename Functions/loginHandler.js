@@ -1,5 +1,5 @@
 const UserRepository = require('../Repositories/UserRepository');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const db = require('../Database/db');
 const { validateToken } = require('./PasswordRecovery');
