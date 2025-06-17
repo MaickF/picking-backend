@@ -51,11 +51,6 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Something went wrong!' });
 });
 
-// Manejo de rutas no encontradas
-app.use('*', (req, res) => {
-  res.status(404).json({ error: 'Route not found' });
-});
-
 app.listen(port, '0.0.0.0', () => {
   console.log(`Servidor escuchando en puerto ${port}`);
 });
