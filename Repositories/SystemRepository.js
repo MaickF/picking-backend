@@ -1,6 +1,6 @@
 // Repositories/SystemRepository.js
 const db = require('../Database/db');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 async function updateCliente(clienteData) {
   const connection = await db.getConnection();

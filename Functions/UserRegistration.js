@@ -1,4 +1,4 @@
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const db = require('../Database/db');
 
 async function registerUser({ id, nombre, apellidos, correo, departamento, rol, contrasena }) {
