@@ -1,5 +1,5 @@
 const db = require('../Database/db');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const { enviarTokenPorCorreo } = require('./Mailer');
 
 function generarTokenVisible(longitud = 8) {
