@@ -1,7 +1,7 @@
 // API/login.js
 const express = require('express');
 const router = express.Router();
-const loginHandler = require('../Functions/LoginHandler');
+const loginHandler = require('../Functions/loginHandler');
 
 // Ruta raíz del subrouter
 router.post('/', async (req, res) => {
