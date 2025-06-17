@@ -588,7 +588,7 @@ router.post('/verify-token', async (req, res) => {
   }
 });
 
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 router.post('/reset-password', async (req, res) => {
   try {
